@@ -1,0 +1,16 @@
+{
+  "manifest_version": 2,
+ 
+  "name": "friendly reddit",
+  "version": "0.1.0",
+  "description": "Changes google search engine client homepage",
+  "browser_action": {
+    "default_icon": "icon.png"
+  }, 
+  "content_scripts": [{
+    "css": ["styles.css"],
+    "js": ["script.js"],
+    "matches": ["*://*.reddit.com/*"]
+  }]
+ 
+}
